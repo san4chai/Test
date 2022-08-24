@@ -17,20 +17,20 @@ public class SalesManager {
         return max;
     }
 
-    public int truncatedMean() {
-        int max = -1;
+    public long truncatedMean() {
+        long max = -1;
         Arrays.sort(sales);
-        int min = sales[0];
-        for (int sale : sales) {
+        long min = sales[0];
+        for (long sale : sales) {
             if (sale > max) {
                 max = sale;
             }
         }
-        int sum = 0;
-        for (int sale : sales){
+        long sum = 0;
+        for (long sale : sales){
             sum += sale;
         }
-        int result = (sum - min - max)/ (sales.length - 2);
+        long result = (sum - min - max)/ (sales.length - 2);
         return result;
     }
 }
