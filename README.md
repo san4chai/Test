@@ -1,3 +1,4 @@
 # SalesManager class
 
-## Search and return the maximum passed value
+## - Search the maximum passed value
+## - Average value calculation
